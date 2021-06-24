@@ -1,5 +1,6 @@
 import React from 'react';
 import HomePage from './pages/homepage/HomePage';
+import ShopPage from './pages/ShopPage/ShopPage';
 import {Route,Switch} from 'react-router-dom';
 import './App.css';
 
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <Switch>
         <Route exact path='/' component={HomePage} />
+        <Route exact path='/shop' component={ShopPage} />
       </Switch>
     </div>
   );
